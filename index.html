@@ -6,19 +6,15 @@
     <title>Energy Quest</title>
 
     <link rel="manifest" href="manifest.json">
-    <meta name="mobile-web-app-capable" content="yes">
+
     <meta name="apple-mobile-web-app-capable" content="yes">
-    
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
     <meta name="apple-mobile-web-app-title" content="Energy Quest">
     
     <meta name="theme-color" content="#ffffff">
     
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="apple-touch-icon" href="icon.png">
 
     <style>
         body, html {
@@ -35,10 +31,7 @@
             width: 100%;
             height: 100%;
             border: none;
-            
-            /* 关键修改 2：删掉了之前的 padding-top */
-            /* 现在的 iframe 会占满 100% 的屏幕，连刘海屏后面都是你的网页 */
-            padding: 0; 
+            padding: 0; /* 0内边距，让画面铺满全屏 */
         }
     </style>
 </head>
